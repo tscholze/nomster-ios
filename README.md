@@ -18,4 +18,4 @@ What's Nomster?
 ==
 Nomster is a simple approach to simplify the "what shall we eat at lunch time?" process. It provides a list of existing suggestions from colleagues.
 
-* [Project page](https://tschlolze.github.io/nomster-parent) on Github
+* [Project page](https://tscholze.github.io/nomster-parent) on Github
