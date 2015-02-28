@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F65269C11A9D11C600978936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269C01A9D11C600978936 /* AppDelegate.swift */; };
+		F65269C51A9D11C600978936 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269C41A9D11C600978936 /* DetailViewController.swift */; };
+		F65269C81A9D11C600978936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65269C61A9D11C600978936 /* Main.storyboard */; };
+		F65269CA1A9D11C600978936 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65269C91A9D11C600978936 /* Images.xcassets */; };
+		F65269CD1A9D11C600978936 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F65269CB1A9D11C600978936 /* LaunchScreen.xib */; };
+		F65269D91A9D11C600978936 /* NomsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269D81A9D11C600978936 /* NomsterTests.swift */; };
+		F65269E31A9D12B800978936 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F65269E21A9D12B800978936 /* data.json */; };
+		F65269E71A9D1A0300978936 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269E61A9D1A0300978936 /* Suggestion.swift */; };
+		F65269ED1A9D205800978936 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269EC1A9D205800978936 /* ListViewController.swift */; };
+		F6EDE1061AA203A300F49B46 /* nomster-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */; };
+		F6EDE1081AA219B400F49B46 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDE1071AA219B400F49B46 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F65269D31A9D11C600978936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F65269B31A9D11C500978936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F65269BA1A9D11C500978936;
+			remoteInfo = Nomster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F65269BB1A9D11C500978936 /* Nomster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nomster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65269BF1A9D11C500978936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65269C01A9D11C600978936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F65269C41A9D11C600978936 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F65269C71A9D11C600978936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F65269C91A9D11C600978936 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F65269CC1A9D11C600978936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F65269D21A9D11C600978936 /* NomsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NomsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65269D71A9D11C600978936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65269D81A9D11C600978936 /* NomsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomsterTests.swift; sourceTree = "<group>"; };
+		F65269E21A9D12B800978936 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../data.json; sourceTree = "<group>"; };
+		F65269E61A9D1A0300978936 /* Suggestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		F65269EC1A9D205800978936 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nomster-logo-large.png"; sourceTree = "<group>"; };
+		F6EDE1071AA219B400F49B46 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F65269B81A9D11C500978936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EDE1081AA219B400F49B46 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65269CF1A9D11C600978936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F65269B21A9D11C500978936 = {
+			isa = PBXGroup;
+			children = (
+				F6EDE1091AA219C400F49B46 /* Frameworks */,
+				F65269BD1A9D11C500978936 /* Nomster */,
+				F65269D51A9D11C600978936 /* NomsterTests */,
+				F65269BC1A9D11C500978936 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F65269BC1A9D11C500978936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F65269BB1A9D11C500978936 /* Nomster.app */,
+				F65269D21A9D11C600978936 /* NomsterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F65269BD1A9D11C500978936 /* Nomster */ = {
+			isa = PBXGroup;
+			children = (
+				F65269E51A9D19F600978936 /* Models */,
+				F65269E41A9D19B800978936 /* Assets */,
+				F65269C01A9D11C600978936 /* AppDelegate.swift */,
+				F65269C41A9D11C600978936 /* DetailViewController.swift */,
+				F65269EC1A9D205800978936 /* ListViewController.swift */,
+				F65269C61A9D11C600978936 /* Main.storyboard */,
+				F65269C91A9D11C600978936 /* Images.xcassets */,
+				F65269CB1A9D11C600978936 /* LaunchScreen.xib */,
+				F65269BE1A9D11C500978936 /* Supporting Files */,
+			);
+			path = Nomster;
+			sourceTree = "<group>";
+		};
+		F65269BE1A9D11C500978936 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F65269BF1A9D11C500978936 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F65269D51A9D11C600978936 /* NomsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F65269D81A9D11C600978936 /* NomsterTests.swift */,
+				F65269D61A9D11C600978936 /* Supporting Files */,
+			);
+			path = NomsterTests;
+			sourceTree = "<group>";
+		};
+		F65269D61A9D11C600978936 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F65269D71A9D11C600978936 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F65269E41A9D19B800978936 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */,
+				F65269E21A9D12B800978936 /* data.json */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		F65269E51A9D19F600978936 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F65269E61A9D1A0300978936 /* Suggestion.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F6EDE1091AA219C400F49B46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6EDE1071AA219B400F49B46 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F65269BA1A9D11C500978936 /* Nomster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65269DC1A9D11C600978936 /* Build configuration list for PBXNativeTarget "Nomster" */;
+			buildPhases = (
+				F65269B71A9D11C500978936 /* Sources */,
+				F65269B81A9D11C500978936 /* Frameworks */,
+				F65269B91A9D11C500978936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nomster;
+			productName = Nomster;
+			productReference = F65269BB1A9D11C500978936 /* Nomster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F65269D11A9D11C600978936 /* NomsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65269DF1A9D11C600978936 /* Build configuration list for PBXNativeTarget "NomsterTests" */;
+			buildPhases = (
+				F65269CE1A9D11C600978936 /* Sources */,
+				F65269CF1A9D11C600978936 /* Frameworks */,
+				F65269D01A9D11C600978936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F65269D41A9D11C600978936 /* PBXTargetDependency */,
+			);
+			name = NomsterTests;
+			productName = NomsterTests;
+			productReference = F65269D21A9D11C600978936 /* NomsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F65269B31A9D11C500978936 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Tobias Scholze";
+				TargetAttributes = {
+					F65269BA1A9D11C500978936 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					F65269D11A9D11C600978936 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = F65269BA1A9D11C500978936;
+					};
+				};
+			};
+			buildConfigurationList = F65269B61A9D11C500978936 /* Build configuration list for PBXProject "Nomster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F65269B21A9D11C500978936;
+			productRefGroup = F65269BC1A9D11C500978936 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F65269BA1A9D11C500978936 /* Nomster */,
+				F65269D11A9D11C600978936 /* NomsterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F65269B91A9D11C500978936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65269C81A9D11C600978936 /* Main.storyboard in Resources */,
+				F65269CD1A9D11C600978936 /* LaunchScreen.xib in Resources */,
+				F6EDE1061AA203A300F49B46 /* nomster-logo-large.png in Resources */,
+				F65269CA1A9D11C600978936 /* Images.xcassets in Resources */,
+				F65269E31A9D12B800978936 /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65269D01A9D11C600978936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F65269B71A9D11C500978936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65269C51A9D11C600978936 /* DetailViewController.swift in Sources */,
+				F65269C11A9D11C600978936 /* AppDelegate.swift in Sources */,
+				F65269ED1A9D205800978936 /* ListViewController.swift in Sources */,
+				F65269E71A9D1A0300978936 /* Suggestion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65269CE1A9D11C600978936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65269D91A9D11C600978936 /* NomsterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F65269D41A9D11C600978936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F65269BA1A9D11C500978936 /* Nomster */;
+			targetProxy = F65269D31A9D11C600978936 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F65269C61A9D11C600978936 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F65269C71A9D11C600978936 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F65269CB1A9D11C600978936 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F65269CC1A9D11C600978936 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F65269DA1A9D11C600978936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F65269DB1A9D11C600978936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F65269DD1A9D11C600978936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nomster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F65269DE1A9D11C600978936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nomster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F65269E01A9D11C600978936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NomsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nomster.app/Nomster";
+			};
+			name = Debug;
+		};
+		F65269E11A9D11C600978936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NomsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nomster.app/Nomster";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F65269B61A9D11C500978936 /* Build configuration list for PBXProject "Nomster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65269DA1A9D11C600978936 /* Debug */,
+				F65269DB1A9D11C600978936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65269DC1A9D11C600978936 /* Build configuration list for PBXNativeTarget "Nomster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65269DD1A9D11C600978936 /* Debug */,
+				F65269DE1A9D11C600978936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65269DF1A9D11C600978936 /* Build configuration list for PBXNativeTarget "NomsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65269E01A9D11C600978936 /* Debug */,
+				F65269E11A9D11C600978936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F65269B31A9D11C500978936 /* Project object */;
+}
