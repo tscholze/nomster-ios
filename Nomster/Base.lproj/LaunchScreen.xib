@@ -20,7 +20,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nomster-logo-large.png" translatesAutoresizingMaskIntoConstraints="NO" id="My8-Iy-eMr">
                     <rect key="frame" x="50" y="8" width="400" height="279"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="279" id="JIh-gw-60b"/>
+                        <constraint firstAttribute="height" constant="279" id="OCU-qi-B7p"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nomster" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2k-qZ-Pif">
@@ -32,12 +32,13 @@
             </subviews>
             <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="X2k-qZ-Pif" firstAttribute="top" secondItem="My8-Iy-eMr" secondAttribute="bottom" constant="37" id="O1i-CM-xnY"/>
-                <constraint firstItem="My8-Iy-eMr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="SFK-1p-SDZ"/>
-                <constraint firstAttribute="trailing" secondItem="My8-Iy-eMr" secondAttribute="trailing" constant="30" id="bC9-Ks-2zF"/>
+                <constraint firstItem="My8-Iy-eMr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="LV7-zR-aKY"/>
+                <constraint firstItem="My8-Iy-eMr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="OdL-N6-MaA"/>
+                <constraint firstItem="My8-Iy-eMr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="RbK-gq-ONl"/>
+                <constraint firstItem="X2k-qZ-Pif" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cux-Wf-jKz"/>
                 <constraint firstAttribute="centerY" secondItem="yNr-3k-802" secondAttribute="centerY" constant="0.5" id="fgz-op-Eh9"/>
-                <constraint firstItem="My8-Iy-eMr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="pB0-PE-LV1"/>
-                <constraint firstItem="X2k-qZ-Pif" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tg3-3O-oFA"/>
+                <constraint firstAttribute="trailing" secondItem="My8-Iy-eMr" secondAttribute="trailing" constant="30" id="kE8-ue-AOJ"/>
+                <constraint firstItem="X2k-qZ-Pif" firstAttribute="top" secondItem="My8-Iy-eMr" secondAttribute="bottom" constant="37" id="oYW-Tc-adF"/>
                 <constraint firstAttribute="centerX" secondItem="yNr-3k-802" secondAttribute="centerX" id="y1j-Kf-7PE"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

@@ -1,5 +1,5 @@
  [
-  {"idSuggestion":0,"name":"Uncle Joe's Tomate Feast","description":"Wanna join to eat some awesome red tomatoes from my backyard? Absolutely tasteful!","latitude":40.722195,"longitude":-73.98743,"image":null,"date":1425164400,"attendeeSuggestionSubscriptions":null},
-  {"idSuggestion":1,"name":"Pizza Bob","description":"Just 5 bucks if we order between 11am and 3pm!","latitude":67.544234,"longitude":-10.56283,"image":null,"date":1425164400,"attendeeSuggestionSubscriptions":null}
-  ]
+  {"idSuggestion":0,"name":"Katz' Diner","description":"Awesome sandwiches for meat lovers! Not cheap but very tasteful","latitude":40.722195,"longitude":-73.98743,"image":null,"date":1425164400,"attendeeSuggestionSubscriptions":null},
+  {"idSuggestion":1,"name":"Ciminelli's Pizza","description":"Just 5 bucks if we order between 11am and 3pm!","latitude":40.738790,"longitude":-73.486997,"image":null,"date":1425164400,"attendeeSuggestionSubscriptions":null}
+]
 
