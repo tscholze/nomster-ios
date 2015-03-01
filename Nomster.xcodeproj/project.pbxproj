@@ -89,14 +89,11 @@
 		F65269BD1A9D11C500978936 /* Nomster */ = {
 			isa = PBXGroup;
 			children = (
+				F6AD52C01AA318C900B73214 /* UI */,
+				F6AD52BF1AA318B600B73214 /* ViewControllers */,
 				F65269E51A9D19F600978936 /* Models */,
 				F65269E41A9D19B800978936 /* Assets */,
 				F65269C01A9D11C600978936 /* AppDelegate.swift */,
-				F65269C41A9D11C600978936 /* DetailViewController.swift */,
-				F65269EC1A9D205800978936 /* ListViewController.swift */,
-				F65269C61A9D11C600978936 /* Main.storyboard */,
-				F65269C91A9D11C600978936 /* Images.xcassets */,
-				F65269CB1A9D11C600978936 /* LaunchScreen.xib */,
 				F65269BE1A9D11C500978936 /* Supporting Files */,
 			);
 			path = Nomster;
@@ -130,6 +127,7 @@
 		F65269E41A9D19B800978936 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F65269C91A9D11C600978936 /* Images.xcassets */,
 				F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */,
 				F65269E21A9D12B800978936 /* data.json */,
 			);
@@ -142,6 +140,24 @@
 				F65269E61A9D1A0300978936 /* Suggestion.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		F6AD52BF1AA318B600B73214 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F65269C41A9D11C600978936 /* DetailViewController.swift */,
+				F65269EC1A9D205800978936 /* ListViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F6AD52C01AA318C900B73214 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F65269C61A9D11C600978936 /* Main.storyboard */,
+				F65269CB1A9D11C600978936 /* LaunchScreen.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		F6EDE1091AA219C400F49B46 /* Frameworks */ = {
