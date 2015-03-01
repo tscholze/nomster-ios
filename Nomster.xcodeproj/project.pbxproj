@@ -16,6 +16,7 @@
 		F65269E31A9D12B800978936 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F65269E21A9D12B800978936 /* data.json */; };
 		F65269E71A9D1A0300978936 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269E61A9D1A0300978936 /* Suggestion.swift */; };
 		F65269ED1A9D205800978936 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269EC1A9D205800978936 /* ListViewController.swift */; };
+		F6AD52C21AA3640100B73214 /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD52C11AA3640100B73214 /* SuggestionTableViewCell.swift */; };
 		F6EDE1061AA203A300F49B46 /* nomster-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */; };
 		F6EDE1081AA219B400F49B46 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDE1071AA219B400F49B46 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		F65269E21A9D12B800978936 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../data.json; sourceTree = "<group>"; };
 		F65269E61A9D1A0300978936 /* Suggestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 		F65269EC1A9D205800978936 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		F6AD52C11AA3640100B73214 /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
 		F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nomster-logo-large.png"; sourceTree = "<group>"; };
 		F6EDE1071AA219B400F49B46 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 			children = (
 				F65269C41A9D11C600978936 /* DetailViewController.swift */,
 				F65269EC1A9D205800978936 /* ListViewController.swift */,
+				F6AD52C11AA3640100B73214 /* SuggestionTableViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				F65269C51A9D11C600978936 /* DetailViewController.swift in Sources */,
 				F65269C11A9D11C600978936 /* AppDelegate.swift in Sources */,
+				F6AD52C21AA3640100B73214 /* SuggestionTableViewCell.swift in Sources */,
 				F65269ED1A9D205800978936 /* ListViewController.swift in Sources */,
 				F65269E71A9D1A0300978936 /* Suggestion.swift in Sources */,
 			);

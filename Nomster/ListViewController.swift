@@ -43,12 +43,10 @@ extension ListViewcontroller: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
-        
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! SuggestionTableViewCell
         let currentSuggestion: Suggestion = appDelegate.suggestions.objectAtIndex(indexPath.row) as! Suggestion
         
-        cell.textLabel?.text = currentSuggestion.name
-        cell.detailTextLabel?.text = currentSuggestion.description
+        cell.useSuggestion(currentSuggestion)
         
         return cell
     }
