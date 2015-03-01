@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,10 +17,27 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nomster-logo-large.png" translatesAutoresizingMaskIntoConstraints="NO" id="My8-Iy-eMr">
+                    <rect key="frame" x="50" y="8" width="400" height="279"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="279" id="JIh-gw-60b"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nomster" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2k-qZ-Pif">
+                    <rect key="frame" x="143" y="324" width="195" height="54"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="X2k-qZ-Pif" firstAttribute="top" secondItem="My8-Iy-eMr" secondAttribute="bottom" constant="37" id="O1i-CM-xnY"/>
+                <constraint firstItem="My8-Iy-eMr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="SFK-1p-SDZ"/>
+                <constraint firstAttribute="trailing" secondItem="My8-Iy-eMr" secondAttribute="trailing" constant="30" id="bC9-Ks-2zF"/>
                 <constraint firstAttribute="centerY" secondItem="yNr-3k-802" secondAttribute="centerY" constant="0.5" id="fgz-op-Eh9"/>
+                <constraint firstItem="My8-Iy-eMr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="pB0-PE-LV1"/>
+                <constraint firstItem="X2k-qZ-Pif" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tg3-3O-oFA"/>
                 <constraint firstAttribute="centerX" secondItem="yNr-3k-802" secondAttribute="centerX" id="y1j-Kf-7PE"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -45,4 +63,7 @@
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="nomster-logo-large.png" width="891" height="1151"/>
+    </resources>
 </document>

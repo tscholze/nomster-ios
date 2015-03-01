@@ -10,6 +10,7 @@ import UIKit
 
 class SuggestionTableViewCell: UITableViewCell {
     
+    @IBOutlet var logoView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     
@@ -19,5 +20,15 @@ class SuggestionTableViewCell: UITableViewCell {
                             suggestion.date, dateStyle: NSDateFormatterStyle.ShortStyle,
                             timeStyle: NSDateFormatterStyle.ShortStyle
                         )
+        
+        logoView.layer.cornerRadius = logoView.frame.width / 2
+        logoView.clipsToBounds = true
+        logoView.layer.borderWidth = 1.0
+        logoView.layer.borderColor = UIColor (
+                                        red: 0x33 / 255,
+                                        green: 0x99 / 255,
+                                        blue: 0x66 / 255,
+                                        alpha: 1.0
+                                    ).CGColor
     }
 }

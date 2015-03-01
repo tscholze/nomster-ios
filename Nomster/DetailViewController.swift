@@ -50,6 +50,13 @@ class DetailViewController: UIViewController {
         mapView.addAnnotation(annotation)
         mapView.setRegion(region, animated: true)
         mapView.mapType = MKMapType.Satellite
+        mapView.layer.borderWidth = 2.0
+        mapView.layer.borderColor = UIColor (
+            red: 0x33 / 255,
+            green: 0x99 / 255,
+            blue: 0x66 / 255,
+            alpha: 1.0
+            ).CGColor
     }
 
     override func didReceiveMemoryWarning() {
