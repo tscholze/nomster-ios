@@ -2,7 +2,7 @@
 
 Nomster for iOS
 =
-Nomster-iOS is a basic client for the Nomster-ecosystem. It acts as playground for my Swift exercises.
+Nomster-iOS is a basic client for the [Nomster-ecosystem](https://tscholze.github.io/nomster-parent). It acts as playground for my Swift exercises.
 
 The current version of the application works without the server. It ships a dummy datasource.
 
@@ -13,6 +13,8 @@ The very first screenshots of the app:
 ![List Version 0.0.0](https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-list.png)
 
 ![Detail Version 0.0.0](https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-detail.png)
+
+![Tweet feature Version 0.0.0](https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-tweet.png)
 
 What's Nomster?
 ==
