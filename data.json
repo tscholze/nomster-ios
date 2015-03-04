@@ -1,5 +1,4 @@
  [
-  {"idSuggestion":0,"name":"Katz' Diner","description":"Awesome sandwiches for meat lovers! Not cheap but very tasteful","latitude":40.722195,"longitude":-73.98743,"image":null,"date":1425164400,"attendeeSuggestionSubscriptions":null},
-  {"idSuggestion":1,"name":"Ciminelli's Pizza","description":"Just 5 bucks if we order between 11am and 3pm!","latitude":40.738790,"longitude":-73.486997,"image":null,"date":1425164400,"attendeeSuggestionSubscriptions":null}
+  {"idSuggestion":0,"name":"Katz' Diner","description":"Awesome sandwiches for meat lovers! Not cheap but very tasteful","latitude":40.722195,"longitude":-73.98743,"image":"katz","date":1425164400,"attendeeSuggestionSubscriptions":null},
+  {"idSuggestion":1,"name":"Ciminelli's Pizza","description":"Just 5 bucks if we order between 11am and 3pm!","latitude":40.738790,"longitude":-73.486997,"image":"ciminelli","date":1425164400,"attendeeSuggestionSubscriptions":null}
 ]
-

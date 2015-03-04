@@ -30,5 +30,12 @@ class SuggestionTableViewCell: UITableViewCell {
                                         blue: 0x66 / 255,
                                         alpha: 1.0
                                     ).CGColor
+        
+        if (suggestion.image != "") {
+            // Temp. fix for not working base64 string in json file
+            let path = NSBundle.mainBundle().pathForResource(suggestion.image, ofType: "png")
+            let data = NSData(contentsOfFile: path!)
+            logoView.image = UIImage(data: data!)
+        }
     }
 }
