@@ -19,6 +19,7 @@
 		F6AD52C21AA3640100B73214 /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD52C11AA3640100B73214 /* SuggestionTableViewCell.swift */; };
 		F6C4F4EB1AA71E44005AB636 /* katz.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C4F4EA1AA71E44005AB636 /* katz.png */; };
 		F6C4F4ED1AA71EB5005AB636 /* ciminelli.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C4F4EC1AA71EB5005AB636 /* ciminelli.png */; };
+		F6C4F4F11AA72B20005AB636 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C4F4F01AA72B20005AB636 /* Social.framework */; };
 		F6EDE1061AA203A300F49B46 /* nomster-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */; };
 		F6EDE1081AA219B400F49B46 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDE1071AA219B400F49B46 /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		F6AD52C11AA3640100B73214 /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
 		F6C4F4EA1AA71E44005AB636 /* katz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katz.png; sourceTree = "<group>"; };
 		F6C4F4EC1AA71EB5005AB636 /* ciminelli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ciminelli.png; sourceTree = "<group>"; };
+		F6C4F4F01AA72B20005AB636 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nomster-logo-large.png"; sourceTree = "<group>"; };
 		F6EDE1071AA219B400F49B46 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C4F4F11AA72B20005AB636 /* Social.framework in Frameworks */,
 				F6EDE1081AA219B400F49B46 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +175,7 @@
 		F6EDE1091AA219C400F49B46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6C4F4F01AA72B20005AB636 /* Social.framework */,
 				F6EDE1071AA219B400F49B46 /* MapKit.framework */,
 			);
 			name = Frameworks;

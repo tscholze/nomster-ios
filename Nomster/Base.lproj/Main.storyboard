@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9Bf-zF-YlK">
@@ -97,7 +97,7 @@
                         <viewControllerLayoutGuide type="bottom" id="iyh-8M-NJM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gFF-Pg-4gX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="frF-8s-sDR">
@@ -113,34 +113,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="04i-QE-HsM">
-                                <rect key="frame" x="16" y="225" width="568" height="355"/>
+                                <rect key="frame" x="16" y="167" width="568" height="369"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsP-du-vmF">
-                                <rect key="frame" x="16" y="144" width="109" height="30"/>
-                                <state key="normal" title="Enter attendees">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="toggleSubscription:" destination="neA-Fa-cmU" eventType="touchUpInside" id="FG4-nS-6j0"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="frF-8s-sDR" firstAttribute="trailing" secondItem="04i-QE-HsM" secondAttribute="trailing" id="254-Zl-ZDz"/>
                             <constraint firstItem="04i-QE-HsM" firstAttribute="leading" secondItem="frF-8s-sDR" secondAttribute="leading" id="28y-PI-vV2"/>
                             <constraint firstItem="04i-QE-HsM" firstAttribute="leading" secondItem="frF-8s-sDR" secondAttribute="leading" id="4GF-Iq-2I6"/>
-                            <constraint firstItem="bsP-du-vmF" firstAttribute="leading" secondItem="ps7-SQ-lfy" secondAttribute="leading" id="4sR-4C-noQ"/>
+                            <constraint firstItem="04i-QE-HsM" firstAttribute="top" secondItem="ps7-SQ-lfy" secondAttribute="bottom" constant="31" id="6am-by-UBW"/>
                             <constraint firstItem="ps7-SQ-lfy" firstAttribute="top" secondItem="2fe-11-XIk" secondAttribute="bottom" constant="57" id="Kb5-Ch-tGH"/>
                             <constraint firstItem="frF-8s-sDR" firstAttribute="top" secondItem="2fe-11-XIk" secondAttribute="bottom" constant="15" id="KeP-YM-5xL"/>
                             <constraint firstAttribute="trailing" secondItem="ps7-SQ-lfy" secondAttribute="trailing" constant="16" id="QGK-6w-fsp"/>
                             <constraint firstAttribute="bottom" secondItem="04i-QE-HsM" secondAttribute="bottom" constant="20" symbolic="YES" id="VGu-ZP-nzz"/>
                             <constraint firstItem="04i-QE-HsM" firstAttribute="trailing" secondItem="gFF-Pg-4gX" secondAttribute="trailingMargin" id="WIg-8Y-ckI"/>
                             <constraint firstAttribute="bottom" secondItem="04i-QE-HsM" secondAttribute="bottom" constant="20" symbolic="YES" id="Y71-ha-6dp"/>
-                            <constraint firstItem="04i-QE-HsM" firstAttribute="top" secondItem="bsP-du-vmF" secondAttribute="bottom" constant="51" id="Zsy-25-OBa"/>
                             <constraint firstItem="ps7-SQ-lfy" firstAttribute="leading" secondItem="gFF-Pg-4gX" secondAttribute="leadingMargin" id="arY-TR-kOo"/>
                             <constraint firstItem="04i-QE-HsM" firstAttribute="leading" secondItem="gFF-Pg-4gX" secondAttribute="leadingMargin" id="dok-gl-EHf"/>
-                            <constraint firstItem="bsP-du-vmF" firstAttribute="top" secondItem="ps7-SQ-lfy" secondAttribute="bottom" constant="8" symbolic="YES" id="e2m-Ta-Ick"/>
                             <constraint firstItem="04i-QE-HsM" firstAttribute="trailing" secondItem="frF-8s-sDR" secondAttribute="trailing" id="wZY-7P-cG7"/>
                             <constraint firstAttribute="width" secondItem="04i-QE-HsM" secondAttribute="height" multiplier="600:311" id="zHs-9I-8Pi"/>
                         </constraints>
@@ -153,11 +142,26 @@
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Subscribe to lunch" id="itx-0w-bD9">
+                            <color key="tintColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="toggleSubscription:" destination="neA-Fa-cmU" id="1xb-kP-c99"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="T9W-s9-wga"/>
+                        <barButtonItem title="Tweet it" id="OCP-fv-bSN">
+                            <color key="tintColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="tweetIt:" destination="neA-Fa-cmU" id="iwO-Ij-tun"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <connections>
                         <outlet property="descriptionLabel" destination="ps7-SQ-lfy" id="oPy-fG-F9N"/>
                         <outlet property="mapView" destination="04i-QE-HsM" id="UET-jn-f7T"/>
                         <outlet property="nameLabel" destination="frF-8s-sDR" id="YaN-b5-aeK"/>
-                        <outlet property="toggleSubscriptionButton" destination="bsP-du-vmF" id="XQp-fD-jCU"/>
+                        <outlet property="subscribeButton" destination="itx-0w-bD9" id="W66-gJ-jr2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F06-Wd-kAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -167,9 +171,10 @@
         <!--First-->
         <scene sceneID="Mzf-Dj-DSv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="utA-gQ-6xQ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="utA-gQ-6xQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="x7x-lO-MCL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -181,6 +186,9 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="AEg-zP-Xq1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="XP8-cZ-9SK"/>
                     </connections>

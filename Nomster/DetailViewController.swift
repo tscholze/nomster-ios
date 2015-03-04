@@ -9,16 +9,17 @@
 import UIKit
 import CoreLocation
 import MapKit
+import Social
 
 class DetailViewController: UIViewController {
     
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var mapView: MKMapView!
-    @IBOutlet var toggleSubscriptionButton: UIButton!
+    @IBOutlet var subscribeButton: UIBarButtonItem!
     
-    let removeSubscription: String = "Leave the attendees"
-    let createSubscription: String = "Enter the attendees"
+    let removeSubscription: String = "Unsubscribe"
+    let createSubscription: String = "Subscribe to lunch"
     
     var suggestion: Suggestion = Suggestion()
     var isSubscribed: Bool = false
@@ -26,10 +27,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        isSubscribed = false
+        toggleSubscriptionUi()
+        
         // Setup labels
         nameLabel.text = suggestion.name
         descriptionLabel.text = suggestion.description
-        toggleSubscriptionButton.titleLabel?.text = createSubscription
         
         // Setup map
         let location = CLLocationCoordinate2D(
@@ -64,16 +67,32 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.toolbarHidden = false
+    }
+    
+    // MARK: - Helpers
+    
+    func toggleSubscriptionUi() {
+        if isSubscribed {
+            subscribeButton.title = removeSubscription
+        } else {
+            subscribeButton.title = createSubscription
+        }
+    }
+    
     // MARK: - Actions
     
     @IBAction func toggleSubscription(sender: AnyObject) {
         isSubscribed = !isSubscribed
+        toggleSubscriptionUi()
+    }
 
-        if isSubscribed {
-            toggleSubscriptionButton.setTitle(removeSubscription, forState: UIControlState.Normal)
-        } else {
-            toggleSubscriptionButton.setTitle(createSubscription, forState: UIControlState.Normal)
-        }
+    @IBAction func tweetIt(sender: AnyObject) {
+        let tweetSheet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        tweetSheet.setInitialText("Wanna join our lunch? Let's go to \(suggestion.name)!")
+        self.presentViewController(tweetSheet, animated: true, completion: nil)
     }
 }
 

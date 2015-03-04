@@ -21,6 +21,11 @@ class ListViewcontroller: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.toolbarHidden = true
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "showSuggestion")  {
             let vc = segue.destinationViewController as! DetailViewController
