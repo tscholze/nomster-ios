@@ -11,8 +11,9 @@ import UIKit
 class CreateSuggestionViewController : UITableViewController {
     
     @IBOutlet var dateField: UITextField!
-    var dateFormat: NSDateFormatter = NSDateFormatter()
-    var datePicker: UIDatePicker = UIDatePicker()
+    
+    let dateFormat: NSDateFormatter = NSDateFormatter()
+    let datePicker: UIDatePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
