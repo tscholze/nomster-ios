@@ -12,7 +12,7 @@
       "description": "Awesome sandwiches for meat lovers! Not cheap but very tasteful",
       "latitude": 40.722195,
       "longitude": -73.98743,
-      "image": "http:\/\/localhost:3000\/dummy-images\/1.png",
+      "image": "https://raw.githubusercontent.com/tscholze/nomster-ios/2e32688c614a9a6d38932a149b188b4f4a96ac21/Nomster/katz.png",
       "creator": {
         "id": 1,
         "fullname": "Foo Bar"
@@ -32,7 +32,7 @@
       "description": "Just 5 bucks if we order between 11am and 3pm!",
       "latitude": 40.73879,
       "longitude": -73.486997,
-      "image": "http:\/\/localhost:3000\/dummy-images\/2.png",
+      "image": "https://raw.githubusercontent.com/tscholze/nomster-ios/2e32688c614a9a6d38932a149b188b4f4a96ac21/Nomster/ciminelli.png",
       "creator": {
         "id": 1,
         "fullname": "Foo Bar"
