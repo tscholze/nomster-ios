@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var suggestions: NSMutableArray = []
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let loader: FixturesLoader = FixturesLoader()
+        //let loader: FixturesLoader = FixturesLoader()
+        let loader: RESTLoader = RESTLoader()
+
         let results: NSArray = loader.get("suggestions") as NSArray
         
         if (suggestions.count == 0) {
