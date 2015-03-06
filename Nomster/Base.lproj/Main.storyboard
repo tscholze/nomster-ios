@@ -98,7 +98,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EfX-BC-6PN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController title="Create suggestion" id="6xh-3v-3rc" customClass="CreateSuggestionViewController" customModule="Nomster" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="hae-vr-n9Z">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="hae-vr-n9Z">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -150,19 +150,16 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CEd-lj-3GF" id="Sd0-w1-Tfb">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6H5-V5-G9p">
-                                                    <rect key="frame" x="1" y="5" width="598" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6H5-V5-G9p">
+                                                    <rect key="frame" x="8" y="5" width="584" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <action selector="dateFieldTouched:" destination="6xh-3v-3rc" eventType="touchDown" id="qqL-e8-Bxx"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="6H5-V5-G9p" firstAttribute="centerX" secondItem="Sd0-w1-Tfb" secondAttribute="centerX" id="NDS-eC-ZEA"/>
-                                                <constraint firstItem="6H5-V5-G9p" firstAttribute="bottom" secondItem="Sd0-w1-Tfb" secondAttribute="bottomMargin" id="wED-4W-7fW"/>
-                                                <constraint firstItem="6H5-V5-G9p" firstAttribute="leading" secondItem="Sd0-w1-Tfb" secondAttribute="leadingMargin" constant="-7" id="z02-iS-PHa"/>
+                                                <constraint firstItem="6H5-V5-G9p" firstAttribute="leading" secondItem="Sd0-w1-Tfb" secondAttribute="leadingMargin" id="IOv-jL-dH7"/>
+                                                <constraint firstItem="6H5-V5-G9p" firstAttribute="trailing" secondItem="Sd0-w1-Tfb" secondAttribute="trailingMargin" id="XPZ-5A-Xzb"/>
+                                                <constraint firstAttribute="centerY" secondItem="6H5-V5-G9p" secondAttribute="centerY" constant="1.5" id="YVP-we-swa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

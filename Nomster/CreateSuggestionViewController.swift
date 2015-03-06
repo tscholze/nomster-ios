@@ -11,9 +11,18 @@ import UIKit
 class CreateSuggestionViewController : UITableViewController {
     
     @IBOutlet var dateField: UITextField!
+    var dateFormat: NSDateFormatter = NSDateFormatter()
+    var datePicker: UIDatePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Setup date picker
+        dateFormat.dateStyle = NSDateFormatterStyle.ShortStyle
+        dateFormat.timeStyle = NSDateFormatterStyle.ShortStyle
+        datePicker.datePickerMode = UIDatePickerMode.DateAndTime
+        datePicker.addTarget(self, action: Selector("updateDateField:"), forControlEvents:UIControlEvents.ValueChanged)
+        dateField.inputView = datePicker
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -21,11 +30,9 @@ class CreateSuggestionViewController : UITableViewController {
         self.navigationController?.toolbarHidden = false
     }
     
-    // MARKS: - Actions
+    // MARK: - Helpers
     
-    @IBAction func dateFieldTouched(sender: AnyObject) {
-        if dateField.inputView == nil {
-
-        }
+    func updateDateField(sender: UIDatePicker) {
+        dateField.text = dateFormat.stringFromDate(sender.date)
     }
 }
