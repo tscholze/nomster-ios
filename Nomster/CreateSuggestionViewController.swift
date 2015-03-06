@@ -90,7 +90,7 @@ class CreateSuggestionViewController : UITableViewController {
         
         let latitude = (latitudeField.text as NSString).doubleValue
         let longitude = (longitudeField.text as NSString).doubleValue
-        var newSuggestion: Suggestion = Suggestion.initWith(0, name: nameField.text, description: descriptionField.text, image: image, date: datePicker.date, latitude: latitude, longitude: longitude)
+        var newSuggestion: Suggestion = Suggestion.initWith(0, creator: "Me", name: nameField.text, description: descriptionField.text, image: image, date: datePicker.date, latitude: latitude, longitude: longitude)
         
         appDelegate.suggestions.addObject(newSuggestion)
     }

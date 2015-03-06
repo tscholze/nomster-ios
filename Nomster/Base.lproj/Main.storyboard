@@ -48,6 +48,15 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nomster-logo-large.png" translatesAutoresizingMaskIntoConstraints="NO" id="XIH-fM-rhK">
                                                     <rect key="frame" x="1" y="8" width="90" height="83"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Suggestion by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqc-Sc-Vfg">
+                                                    <rect key="frame" x="99" y="70" width="187" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="187" id="C1R-vO-TK0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="2GD-X4-rdX" firstAttribute="top" secondItem="Y2p-il-aa9" secondAttribute="topMargin" constant="12" id="BJI-0c-vXj"/>
@@ -62,6 +71,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="creatorLabel" destination="kqc-Sc-Vfg" id="XsT-XN-RQI"/>
                                             <outlet property="dateLabel" destination="xwc-YW-o3Y" id="kCC-Ko-npz"/>
                                             <outlet property="logoView" destination="XIH-fM-rhK" id="bJV-tV-iP5"/>
                                             <outlet property="nameLabel" destination="2GD-X4-rdX" id="Cnd-ol-QYH"/>

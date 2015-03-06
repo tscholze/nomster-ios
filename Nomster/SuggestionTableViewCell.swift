@@ -13,6 +13,7 @@ class SuggestionTableViewCell: UITableViewCell {
     @IBOutlet var logoView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var creatorLabel: UILabel!
     
     func useSuggestion(suggestion: Suggestion) {
         nameLabel.text = suggestion.name
@@ -20,6 +21,7 @@ class SuggestionTableViewCell: UITableViewCell {
                             suggestion.date, dateStyle: NSDateFormatterStyle.ShortStyle,
                             timeStyle: NSDateFormatterStyle.ShortStyle
                         )
+        creatorLabel.text = "Suggestion by \(suggestion.creator)"
         
         logoView.layer.cornerRadius = logoView.frame.width / 2
         logoView.clipsToBounds = true
@@ -32,10 +34,8 @@ class SuggestionTableViewCell: UITableViewCell {
                                     ).CGColor
         
         if (suggestion.image != "") {
-            // Temp. fix for not working base64 string in json file
-            let path = NSBundle.mainBundle().pathForResource(suggestion.image, ofType: "png")
-            let data = NSData(contentsOfFile: path!)
-            logoView.image = UIImage(data: data!)
+            let data: NSData! = NSData(contentsOfURL: NSURL(string: suggestion.image)!)
+            logoView.image = UIImage(data: data)
         }
     }
 }
