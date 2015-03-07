@@ -34,7 +34,16 @@ class SuggestionTableViewCell: UITableViewCell {
                                     ).CGColor
         
         if (suggestion.image != "") {
-            let data: NSData! = NSData(contentsOfURL: NSURL(string: suggestion.image)!)
+            let data: NSData!
+
+            if (suggestion.image.rangeOfString("http://") != nil || suggestion.image.rangeOfString("https://") != nil) {
+                data = NSData(contentsOfURL: NSURL(string: suggestion.image)!)
+            }
+            else {
+                let path = NSBundle.mainBundle().pathForResource(suggestion.image, ofType: "png")
+                data = NSData(contentsOfFile: path!)
+            }
+
             logoView.image = UIImage(data: data)
         }
     }
