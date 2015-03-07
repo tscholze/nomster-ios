@@ -10,13 +10,13 @@ import Foundation
 
 class Suggestion {
     
-    let idSuggestion: Int
-    let name: String
-    let description: String
-    let image: String
-    let date: NSDate
-    let latitude: Double
-    let longitude: Double
+    var idSuggestion: Int
+    var name: String
+    var description: String
+    var image: String
+    var date: NSDate
+    var latitude: Double
+    var longitude: Double
     
     init() {
         self.idSuggestion = 0
@@ -28,14 +28,18 @@ class Suggestion {
         self.longitude = 0
     }
     
-    init(idSuggestion: Int, name: String, description: String, image: String, date: NSDate, latitude: Double, longitude: Double) {
-        self.idSuggestion = idSuggestion
-        self.name = name
-        self.description = description
-        self.image = image
-        self.date = date
-        self.latitude = latitude
-        self.longitude = longitude
+    class func initWith(idSuggestion: Int, name: String, description: String, image: String, date: NSDate, latitude: Double, longitude: Double) -> Suggestion {
+        
+        var newSuggestion : Suggestion = Suggestion()
+        newSuggestion.idSuggestion = idSuggestion
+        newSuggestion.name = name
+        newSuggestion.description = description
+        newSuggestion.image = image
+        newSuggestion.date = date
+        newSuggestion.latitude = latitude
+        newSuggestion.longitude = longitude
+        
+        return newSuggestion
     }
     
     class func suggestionFromDictionary(dictionary : NSDictionary) -> Suggestion {
@@ -47,6 +51,6 @@ class Suggestion {
         let latitude: Double = dictionary["latitude"] as! Double
         let longitude: Double = dictionary["longitude"] as! Double
         
-        return Suggestion(idSuggestion: id, name: name, description: description, image:image, date: date, latitude: latitude, longitude: longitude)
+        return Suggestion.initWith(id, name: name, description: description, image:image, date: date, latitude: latitude, longitude: longitude)
     }
 }

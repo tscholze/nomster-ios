@@ -15,13 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var suggestions: NSMutableArray = []
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let path = NSBundle.mainBundle().pathForResource("data", ofType: "json")
-        let data = NSData(contentsOfFile: path!)
-        var results = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray
         
-        for result in results {
-            let suggestion = Suggestion.suggestionFromDictionary(result as! NSDictionary)
-            suggestions.addObject(suggestion)
+        if (suggestions.count == 0) {
+            let path = NSBundle.mainBundle().pathForResource("data", ofType: "json")
+            let data = NSData(contentsOfFile: path!)
+            let results = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray
+        
+            for result in results {
+                suggestions.addObject(Suggestion.suggestionFromDictionary(result as! NSDictionary))
+            }
         }
         
         return true
@@ -48,7 +50,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
