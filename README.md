@@ -10,11 +10,15 @@ How it looks
 =
 The very first screenshots of the app:
 
-![List Version 0.0.0](https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-list.png)
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-list.png" alt="List" width="250">
 
-![Detail Version 0.0.0](https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-detail.png)
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-detail.png" alt="Detail" width="250">
 
-![Tweet feature Version 0.0.0](https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-tweet.png)
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-tweet.png" alt="Tweet feature" width="250">
+
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-main.png" alt="Tweet feature" width="250">
+
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-glance.png" alt="Tweet feature" width="250">
 
 What's Nomster?
 ==
