@@ -16,9 +16,9 @@ The very first screenshots of the app:
 
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-tweet.png" alt="Tweet feature" width="250">
 
-<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-main.png" alt="Tweet feature" width="250">
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-main.png" alt="Watch Main UI" width="250">
 
-<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-glance.png" alt="Tweet feature" width="250">
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-glance.png" alt="Watch Glance" width="250">
 
 What's Nomster?
 ==
