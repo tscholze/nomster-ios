@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F629D9081AAC7FBF00A60981 /* katz.png in Resources */ = {isa = PBXBuildFile; fileRef = F629D9071AAC7FBF00A60981 /* katz.png */; };
 		F65269C11A9D11C600978936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269C01A9D11C600978936 /* AppDelegate.swift */; };
 		F65269C51A9D11C600978936 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269C41A9D11C600978936 /* DetailViewController.swift */; };
 		F65269C81A9D11C600978936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65269C61A9D11C600978936 /* Main.storyboard */; };
@@ -24,6 +25,14 @@
 		F6D7DD231AAC78C000CBC8F6 /* NomsterColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7DD221AAC78C000CBC8F6 /* NomsterColors.swift */; };
 		F6EDE1061AA203A300F49B46 /* nomster-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */; };
 		F6EDE1081AA219B400F49B46 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDE1071AA219B400F49B46 /* MapKit.framework */; };
+		F6F7DD9B1AAC7D9300143249 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7DD9A1AAC7D9300143249 /* InterfaceController.swift */; };
+		F6F7DD9D1AAC7D9300143249 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7DD9C1AAC7D9300143249 /* NotificationController.swift */; };
+		F6F7DD9F1AAC7D9300143249 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7DD9E1AAC7D9300143249 /* GlanceController.swift */; };
+		F6F7DDA11AAC7D9300143249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F7DDA01AAC7D9300143249 /* Images.xcassets */; };
+		F6F7DDA51AAC7D9300143249 /* Nomster WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F6F7DDA41AAC7D9300143249 /* Nomster WatchKit App.app */; };
+		F6F7DDAD1AAC7D9300143249 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F7DDAB1AAC7D9300143249 /* Interface.storyboard */; };
+		F6F7DDAF1AAC7D9300143249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F7DDAE1AAC7D9300143249 /* Images.xcassets */; };
+		F6F7DDB21AAC7D9300143249 /* Nomster WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6F7DD951AAC7D9300143249 /* Nomster WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FF1FF7601AAA58A6001CCEB6 /* RESTLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FF75F1AAA58A6001CCEB6 /* RESTLoader.swift */; };
 		FF617CE21AAA545E0038E0CE /* FixturesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF617CE11AAA545E0038E0CE /* FixturesLoader.swift */; };
 /* End PBXBuildFile section */
@@ -36,9 +45,38 @@
 			remoteGlobalIDString = F65269BA1A9D11C500978936;
 			remoteInfo = Nomster;
 		};
+		F6F7DDA61AAC7D9300143249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F65269B31A9D11C500978936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6F7DDA31AAC7D9300143249;
+			remoteInfo = "Nomster WatchKit App";
+		};
+		F6F7DDB01AAC7D9300143249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F65269B31A9D11C500978936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6F7DD941AAC7D9300143249;
+			remoteInfo = "Nomster WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F6F7DDB91AAC7D9300143249 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F6F7DDB21AAC7D9300143249 /* Nomster WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F629D9071AAC7FBF00A60981 /* katz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katz.png; sourceTree = "<group>"; };
 		F65269BB1A9D11C500978936 /* Nomster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nomster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65269BF1A9D11C500978936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65269C01A9D11C600978936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +98,17 @@
 		F6D7DD221AAC78C000CBC8F6 /* NomsterColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsterColors.swift; sourceTree = "<group>"; };
 		F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nomster-logo-large.png"; sourceTree = "<group>"; };
 		F6EDE1071AA219B400F49B46 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F6F7DD951AAC7D9300143249 /* Nomster WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Nomster WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6F7DD981AAC7D9300143249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F7DD991AAC7D9300143249 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F6F7DD9A1AAC7D9300143249 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F6F7DD9C1AAC7D9300143249 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F6F7DD9E1AAC7D9300143249 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		F6F7DDA01AAC7D9300143249 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F6F7DDA41AAC7D9300143249 /* Nomster WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nomster WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6F7DDAA1AAC7D9300143249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F7DDAC1AAC7D9300143249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F6F7DDAE1AAC7D9300143249 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FF1FF75F1AAA58A6001CCEB6 /* RESTLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTLoader.swift; sourceTree = "<group>"; };
 		FF617CE11AAA545E0038E0CE /* FixturesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixturesLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,12 +130,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6F7DD921AAC7D9300143249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F629D9091AAC7FC200A60981 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F629D9071AAC7FBF00A60981 /* katz.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		F65269B21A9D11C500978936 = {
 			isa = PBXGroup;
 			children = (
+				F6F7DD961AAC7D9300143249 /* Nomster WatchKit Extension */,
+				F6F7DDA81AAC7D9300143249 /* Nomster WatchKit App */,
 				F6EDE1091AA219C400F49B46 /* Frameworks */,
 				F65269BD1A9D11C500978936 /* Nomster */,
 				F65269D51A9D11C600978936 /* NomsterTests */,
@@ -99,6 +165,8 @@
 			children = (
 				F65269BB1A9D11C500978936 /* Nomster.app */,
 				F65269D21A9D11C600978936 /* NomsterTests.xctest */,
+				F6F7DD951AAC7D9300143249 /* Nomster WatchKit Extension.appex */,
+				F6F7DDA41AAC7D9300143249 /* Nomster WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +260,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F6F7DD961AAC7D9300143249 /* Nomster WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F6F7DD9A1AAC7D9300143249 /* InterfaceController.swift */,
+				F6F7DD9C1AAC7D9300143249 /* NotificationController.swift */,
+				F6F7DD9E1AAC7D9300143249 /* GlanceController.swift */,
+				F6F7DDA01AAC7D9300143249 /* Images.xcassets */,
+				F6F7DD971AAC7D9300143249 /* Supporting Files */,
+			);
+			path = "Nomster WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F6F7DD971AAC7D9300143249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6F7DD981AAC7D9300143249 /* Info.plist */,
+				F6F7DD991AAC7D9300143249 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6F7DDA81AAC7D9300143249 /* Nomster WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F629D9091AAC7FC200A60981 /* Assets */,
+				F6F7DDAB1AAC7D9300143249 /* Interface.storyboard */,
+				F6F7DDAE1AAC7D9300143249 /* Images.xcassets */,
+				F6F7DDA91AAC7D9300143249 /* Supporting Files */,
+			);
+			path = "Nomster WatchKit App";
+			sourceTree = "<group>";
+		};
+		F6F7DDA91AAC7D9300143249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6F7DDAA1AAC7D9300143249 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		FF617CE01AAA542F0038E0CE /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,10 +319,12 @@
 				F65269B71A9D11C500978936 /* Sources */,
 				F65269B81A9D11C500978936 /* Frameworks */,
 				F65269B91A9D11C500978936 /* Resources */,
+				F6F7DDB91AAC7D9300143249 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F6F7DDB11AAC7D9300143249 /* PBXTargetDependency */,
 			);
 			name = Nomster;
 			productName = Nomster;
@@ -239,6 +349,39 @@
 			productReference = F65269D21A9D11C600978936 /* NomsterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F6F7DD941AAC7D9300143249 /* Nomster WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6F7DDB81AAC7D9300143249 /* Build configuration list for PBXNativeTarget "Nomster WatchKit Extension" */;
+			buildPhases = (
+				F6F7DD911AAC7D9300143249 /* Sources */,
+				F6F7DD921AAC7D9300143249 /* Frameworks */,
+				F6F7DD931AAC7D9300143249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6F7DDA71AAC7D9300143249 /* PBXTargetDependency */,
+			);
+			name = "Nomster WatchKit Extension";
+			productName = "Nomster WatchKit Extension";
+			productReference = F6F7DD951AAC7D9300143249 /* Nomster WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F6F7DDA31AAC7D9300143249 /* Nomster WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6F7DDB71AAC7D9300143249 /* Build configuration list for PBXNativeTarget "Nomster WatchKit App" */;
+			buildPhases = (
+				F6F7DDA21AAC7D9300143249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nomster WatchKit App";
+			productName = "Nomster WatchKit App";
+			productReference = F6F7DDA41AAC7D9300143249 /* Nomster WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,6 +397,12 @@
 					F65269D11A9D11C600978936 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = F65269BA1A9D11C500978936;
+					};
+					F6F7DD941AAC7D9300143249 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					F6F7DDA31AAC7D9300143249 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -272,6 +421,8 @@
 			targets = (
 				F65269BA1A9D11C500978936 /* Nomster */,
 				F65269D11A9D11C600978936 /* NomsterTests */,
+				F6F7DD941AAC7D9300143249 /* Nomster WatchKit Extension */,
+				F6F7DDA31AAC7D9300143249 /* Nomster WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -295,6 +446,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6F7DD931AAC7D9300143249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F7DDA11AAC7D9300143249 /* Images.xcassets in Resources */,
+				F6F7DDA51AAC7D9300143249 /* Nomster WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6F7DDA21AAC7D9300143249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F7DDAD1AAC7D9300143249 /* Interface.storyboard in Resources */,
+				F6F7DDAF1AAC7D9300143249 /* Images.xcassets in Resources */,
+				F629D9081AAC7FBF00A60981 /* katz.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +495,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6F7DD911AAC7D9300143249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F7DD9D1AAC7D9300143249 /* NotificationController.swift in Sources */,
+				F6F7DD9B1AAC7D9300143249 /* InterfaceController.swift in Sources */,
+				F6F7DD9F1AAC7D9300143249 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -332,6 +512,16 @@
 			isa = PBXTargetDependency;
 			target = F65269BA1A9D11C500978936 /* Nomster */;
 			targetProxy = F65269D31A9D11C600978936 /* PBXContainerItemProxy */;
+		};
+		F6F7DDA71AAC7D9300143249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6F7DDA31AAC7D9300143249 /* Nomster WatchKit App */;
+			targetProxy = F6F7DDA61AAC7D9300143249 /* PBXContainerItemProxy */;
+		};
+		F6F7DDB11AAC7D9300143249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6F7DD941AAC7D9300143249 /* Nomster WatchKit Extension */;
+			targetProxy = F6F7DDB01AAC7D9300143249 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -350,6 +540,14 @@
 				F65269CC1A9D11C600978936 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F6F7DDAB1AAC7D9300143249 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6F7DDAC1AAC7D9300143249 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -440,6 +638,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Nomster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,6 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Nomster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,6 +690,60 @@
 			};
 			name = Release;
 		};
+		F6F7DDB31AAC7D9300143249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Nomster WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F6F7DDB41AAC7D9300143249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nomster WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6F7DDB51AAC7D9300143249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Nomster_WatchKit_Extension;
+				INFOPLIST_FILE = "Nomster WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F6F7DDB61AAC7D9300143249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Nomster_WatchKit_Extension;
+				INFOPLIST_FILE = "Nomster WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,6 +770,24 @@
 			buildConfigurations = (
 				F65269E01A9D11C600978936 /* Debug */,
 				F65269E11A9D11C600978936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6F7DDB71AAC7D9300143249 /* Build configuration list for PBXNativeTarget "Nomster WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6F7DDB51AAC7D9300143249 /* Debug */,
+				F6F7DDB61AAC7D9300143249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6F7DDB81AAC7D9300143249 /* Build configuration list for PBXNativeTarget "Nomster WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6F7DDB31AAC7D9300143249 /* Debug */,
+				F6F7DDB41AAC7D9300143249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
