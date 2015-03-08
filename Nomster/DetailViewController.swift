@@ -54,12 +54,7 @@ class DetailViewController: UIViewController {
         mapView.setRegion(region, animated: true)
         mapView.mapType = MKMapType.Satellite
         mapView.layer.borderWidth = 2.0
-        mapView.layer.borderColor = UIColor (
-            red: 0x33 / 255,
-            green: 0x99 / 255,
-            blue: 0x66 / 255,
-            alpha: 1.0
-            ).CGColor
+        mapView.layer.borderColor = NomsterColors.green().CGColor
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,8 +72,10 @@ class DetailViewController: UIViewController {
     func toggleSubscriptionUi() {
         if isSubscribed {
             subscribeButton.title = removeSubscription
+            subscribeButton.tintColor = UIColor.redColor()
         } else {
             subscribeButton.title = createSubscription
+            subscribeButton.tintColor = NomsterColors.green()
         }
     }
     

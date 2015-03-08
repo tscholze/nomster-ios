@@ -13,8 +13,7 @@ class FixturesLoader {
     func get(ressource: NSString) -> NSArray {
         let path = NSBundle.mainBundle().pathForResource("data", ofType: "json")
         let data = NSData(contentsOfFile: path!)
-        var results = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray
-        return results
+        return NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray
     }
 
 }

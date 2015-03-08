@@ -39,8 +39,6 @@ class CreateSuggestionViewController : UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "saveAndBackToList"  {
             saveSuggestion()
-            let vc = segue.destinationViewController as! ListViewcontroller
-            NSLog("Length of array \(appDelegate.suggestions.count)")
         }
     }
     
@@ -69,7 +67,10 @@ class CreateSuggestionViewController : UITableViewController {
             
             // Setup alert view
             let message = ", ".join(errors)
-            let alert = UIAlertController(title: "Information missing", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(
+                    title: "Information missing", message: message,
+                    preferredStyle: UIAlertControllerStyle.Alert
+            )
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
             
@@ -90,7 +91,11 @@ class CreateSuggestionViewController : UITableViewController {
         
         let latitude = (latitudeField.text as NSString).doubleValue
         let longitude = (longitudeField.text as NSString).doubleValue
-        var newSuggestion: Suggestion = Suggestion.initWith(0, creator: "Me", name: nameField.text, description: descriptionField.text, image: image, date: datePicker.date, latitude: latitude, longitude: longitude)
+        var newSuggestion: Suggestion = Suggestion.initWith(
+                0,
+                creator: "Me", name: nameField.text, description: descriptionField.text,
+                image: image, date: datePicker.date, latitude: latitude, longitude: longitude
+        )
         
         appDelegate.suggestions.addObject(newSuggestion)
     }

@@ -10,10 +10,10 @@ import Foundation
 
 class RESTLoader {
 
-    let API_BASE = "http://localhost:3000"
+    let ApiBase = "http://localhost:3000"
 
     func get(ressource: NSString) -> NSArray {
-        let url: NSURL! = NSURL(string: "\(API_BASE)/\(ressource)")
+        let url: NSURL! = NSURL(string: "\(ApiBase)/\(ressource)")
         let data: NSData? = NSData(contentsOfURL: url)
         var results: NSArray = NSArray()
 

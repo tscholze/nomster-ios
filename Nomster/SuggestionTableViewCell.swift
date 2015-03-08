@@ -17,34 +17,27 @@ class SuggestionTableViewCell: UITableViewCell {
     
     func useSuggestion(suggestion: Suggestion) {
         nameLabel.text = suggestion.name
+        creatorLabel.text = "Suggested by \(suggestion.creator)"
         dateLabel.text = NSDateFormatter.localizedStringFromDate (
                             suggestion.date, dateStyle: NSDateFormatterStyle.ShortStyle,
                             timeStyle: NSDateFormatterStyle.ShortStyle
                         )
-        creatorLabel.text = "Suggestion by \(suggestion.creator)"
         
+        // Setup image view
         logoView.layer.cornerRadius = logoView.frame.width / 2
         logoView.clipsToBounds = true
         logoView.layer.borderWidth = 1.0
-        logoView.layer.borderColor = UIColor (
-                                        red: 0x33 / 255,
-                                        green: 0x99 / 255,
-                                        blue: 0x66 / 255,
-                                        alpha: 1.0
-                                    ).CGColor
+        logoView.layer.borderColor = NomsterColors.green().CGColor
         
+        // Use image by url or by local path
         if (suggestion.image != "") {
-            let data: NSData!
-
             if (suggestion.image.rangeOfString("http://") != nil || suggestion.image.rangeOfString("https://") != nil) {
-                data = NSData(contentsOfURL: NSURL(string: suggestion.image)!)
+                logoView.image = UIImage(data: NSData(contentsOfURL: NSURL(string: suggestion.image)!)!)
             }
             else {
                 let path = NSBundle.mainBundle().pathForResource(suggestion.image, ofType: "png")
-                data = NSData(contentsOfFile: path!)
+                logoView.image = UIImage(data: NSData(contentsOfFile: path!)!)
             }
-
-            logoView.image = UIImage(data: data)
         }
     }
 }

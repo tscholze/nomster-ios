@@ -11,16 +11,17 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // Debug flag. If true, the application will go into maintancene mode with local data provider.
+    let IsDebug: Bool = true
+    
     var window: UIWindow?
     var suggestions: NSMutableArray = []
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        //let loader: FixturesLoader = FixturesLoader()
         let loader: RESTLoader = RESTLoader()
-
         let results: NSArray = loader.get("suggestions") as NSArray
         
-        if (suggestions.count == 0) {
+        if IsDebug {
             let path = NSBundle.mainBundle().pathForResource("data", ofType: "json")
             let data = NSData(contentsOfFile: path!)
             let results = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray
