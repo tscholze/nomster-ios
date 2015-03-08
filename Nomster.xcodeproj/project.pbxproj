@@ -23,6 +23,8 @@
 		F6C4F4F31AA9A487005AB636 /* CreateSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F4F21AA9A487005AB636 /* CreateSuggestionViewController.swift */; };
 		F6EDE1061AA203A300F49B46 /* nomster-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */; };
 		F6EDE1081AA219B400F49B46 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDE1071AA219B400F49B46 /* MapKit.framework */; };
+		FF1FF7601AAA58A6001CCEB6 /* RESTLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FF75F1AAA58A6001CCEB6 /* RESTLoader.swift */; };
+		FF617CE21AAA545E0038E0CE /* FixturesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF617CE11AAA545E0038E0CE /* FixturesLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		F6C4F4F21AA9A487005AB636 /* CreateSuggestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSuggestionViewController.swift; sourceTree = "<group>"; };
 		F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nomster-logo-large.png"; sourceTree = "<group>"; };
 		F6EDE1071AA219B400F49B46 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FF1FF75F1AAA58A6001CCEB6 /* RESTLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTLoader.swift; sourceTree = "<group>"; };
+		FF617CE11AAA545E0038E0CE /* FixturesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixturesLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		F65269BD1A9D11C500978936 /* Nomster */ = {
 			isa = PBXGroup;
 			children = (
+				FF617CE01AAA542F0038E0CE /* Services */,
 				F6AD52C01AA318C900B73214 /* UI */,
 				F6AD52BF1AA318B600B73214 /* ViewControllers */,
 				F65269E51A9D19F600978936 /* Models */,
@@ -182,6 +187,15 @@
 				F6EDE1071AA219B400F49B46 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF617CE01AAA542F0038E0CE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF617CE11AAA545E0038E0CE /* FixturesLoader.swift */,
+				FF1FF75F1AAA58A6001CCEB6 /* RESTLoader.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,10 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1FF7601AAA58A6001CCEB6 /* RESTLoader.swift in Sources */,
 				F65269C51A9D11C600978936 /* DetailViewController.swift in Sources */,
 				F65269C11A9D11C600978936 /* AppDelegate.swift in Sources */,
 				F6AD52C21AA3640100B73214 /* SuggestionTableViewCell.swift in Sources */,
 				F65269ED1A9D205800978936 /* ListViewController.swift in Sources */,
+				FF617CE21AAA545E0038E0CE /* FixturesLoader.swift in Sources */,
 				F6C4F4F31AA9A487005AB636 /* CreateSuggestionViewController.swift in Sources */,
 				F65269E71A9D1A0300978936 /* Suggestion.swift in Sources */,
 			);
