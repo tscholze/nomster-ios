@@ -18,6 +18,10 @@ class Suggestion {
     var date: NSDate
     var latitude: Double
     var longitude: Double
+    
+    var hashValue: Int {
+        return (31 &* name.hashValue) &+ date.hashValue
+    }
 
     init() {
         self.idSuggestion = 0

@@ -73,9 +73,11 @@ class DetailViewController: UIViewController {
         if isSubscribed {
             subscribeButton.title = removeSubscription
             subscribeButton.tintColor = UIColor.redColor()
+            Utils.sheduleLocalNotificationBySuggestion(suggestion)
         } else {
             subscribeButton.title = createSubscription
             subscribeButton.tintColor = NomsterColors.green()
+            Utils.unsheduleLocalNotificationByHashValue(suggestion.hashValue)
         }
     }
     

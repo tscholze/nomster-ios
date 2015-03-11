@@ -97,6 +97,7 @@ class CreateSuggestionViewController : UITableViewController {
                 image: image, date: datePicker.date, latitude: latitude, longitude: longitude
         )
         
+        Utils.sheduleLocalNotificationBySuggestion(newSuggestion)
         appDelegate.suggestions.addObject(newSuggestion)
     }
 }
