@@ -403,6 +403,7 @@
 					};
 					F6F7DDA31AAC7D9300143249 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 86KTA845LC;
 					};
 				};
 			};
