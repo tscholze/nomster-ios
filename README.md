@@ -24,6 +24,8 @@ The very first screenshots of the app:
 
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-glance.png" alt="Watch Glance" width="250">
 
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-notification.png" alt="Watch Notification" width="250">
+
 What's Nomster?
 ==
 Nomster is a simple approach to simplify the "what shall we eat at lunch time?" process. It provides a list of existing suggestions from colleagues.
