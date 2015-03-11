@@ -63,7 +63,10 @@
                             </items>
                         </group>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="nomsterWatchPush" id="JfB-70-Muf">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sashColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
                         <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
@@ -77,7 +80,7 @@
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Nomster_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="60" alignment="left" layout="vertical" id="qDe-Sp-quP">
+                        <group width="1" alignment="left" layout="vertical" id="qDe-Sp-quP">
                             <items>
                                 <label alignment="left" verticalAlignment="center" text="Location" numberOfLines="2" id="oU0-6b-njw">
                                     <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,7 +91,7 @@
                                 </label>
                             </items>
                         </group>
-                        <map height="100" alignment="left" id="yRi-T0-oJY"/>
+                        <map height="100" alignment="center" verticalAlignment="bottom" id="yRi-T0-oJY"/>
                     </items>
                     <connections>
                         <outlet property="dateLabel" destination="GxJ-j7-klN" id="aFf-Ru-bff"/>
