@@ -31,6 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
+        // Sort array (date asc)
+        suggestions.sortUsingComparator {
+            (lhs, rhs) -> NSComparisonResult in
+            
+            let o1 = lhs as! Suggestion
+            let o2 = rhs as! Suggestion
+            return o1.date.compare(o2.date)
+        }
+        
         return true
     }
 

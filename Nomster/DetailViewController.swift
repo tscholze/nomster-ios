@@ -73,11 +73,9 @@ class DetailViewController: UIViewController {
         if isSubscribed {
             subscribeButton.title = removeSubscription
             subscribeButton.tintColor = UIColor.redColor()
-            Utils.sheduleLocalNotificationBySuggestion(suggestion)
         } else {
             subscribeButton.title = createSubscription
             subscribeButton.tintColor = NomsterColors.green()
-            Utils.unsheduleLocalNotificationByHashValue(suggestion.hashValue)
         }
     }
     
@@ -85,6 +83,13 @@ class DetailViewController: UIViewController {
     
     @IBAction func toggleSubscription(sender: AnyObject) {
         isSubscribed = !isSubscribed
+        
+        if isSubscribed {
+            Utils.sheduleLocalNotificationBySuggestion(suggestion)
+        } else {
+            Utils.unsheduleLocalNotificationByHashValue(suggestion.hashValue)
+        }
+        
         toggleSubscriptionUi()
     }
 
