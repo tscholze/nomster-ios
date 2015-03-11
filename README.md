@@ -14,6 +14,8 @@ The very first screenshots of the app:
 
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-detail.png" alt="Detail" width="250">
 
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-notification.png" alt="Notifications" width="250">
+
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-tweet.png" alt="Tweet feature" width="250">
 
 **Apple Watch** (only dummy data)
