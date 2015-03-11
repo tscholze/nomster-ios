@@ -12,6 +12,10 @@ import Foundation
 
 class NotificationController: WKUserNotificationInterfaceController {
 
+    @IBOutlet var locationLabel: WKInterfaceLabel!
+    @IBOutlet var dateLabel: WKInterfaceLabel!
+    @IBOutlet var mapView: WKInterfaceMap!
+    
     override init() {
         // Initialize variables here.
         super.init()
@@ -40,14 +44,36 @@ class NotificationController: WKUserNotificationInterfaceController {
     }
     */
     
-    /*
+
     override func didReceiveRemoteNotification(remoteNotification: [NSObject : AnyObject], withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
-        // This method is called when a remote notification needs to be presented.
-        // Implement it if you use a dynamic notification interface.
-        // Populate your dynamic notification interface as quickly as possible.
-        //
-        // After populating your dynamic notification interface call the completion block.
+        
+        // Setup labels
+        let data = remoteNotification["aps"]!["alert"] as! NSDictionary
+        let locationName: String = data["locationName"] as! String
+        let date: String = data["date"] as! String
+        let longitude: Double = data["longitude"] as! Double
+        let latitude: Double = data["latitude"] as! Double
+        
+        locationLabel.setText(locationName)
+        dateLabel.setText(date)
+       
+        // Setup map
+        let location = CLLocationCoordinate2D(
+            latitude: latitude,
+            longitude: longitude
+        )
+        
+        let span = MKCoordinateSpanMake(0.001, 0.001)
+        let region = MKCoordinateRegion(
+            center: location,
+            span: span
+        )
+        
+        mapView.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Red)
+        mapView.setRegion(region)
+      
+        // Complete the action
         completionHandler(.Custom)
     }
-    */
+
 }

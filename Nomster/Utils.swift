@@ -10,7 +10,6 @@ import UIKit
 
 class Utils {
 
-    
     // Shedules a notification by the related suggestion's data.
     class func sheduleLocalNotificationBySuggestion(suggestion: Suggestion) -> Void {
         let newNotification: UILocalNotification = UILocalNotification()

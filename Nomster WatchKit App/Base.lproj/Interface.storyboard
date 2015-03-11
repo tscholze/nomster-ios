@@ -54,7 +54,14 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                        <group width="1" height="80" alignment="left" layout="vertical" id="LQ1-jy-aho">
+                            <items>
+                                <label alignment="left" text="Hurry up!" id="GBv-iV-TvA"/>
+                                <label alignment="left" verticalAlignment="center" text="Details" numberOfLines="3" minimumScaleFactor="0.50000000000000011" id="XkS-y5-khE">
+                                    <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
@@ -68,7 +75,27 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Nomster_WatchKit_App" customModuleProvider="target"/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Nomster_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="60" alignment="left" layout="vertical" id="qDe-Sp-quP">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="Location" numberOfLines="2" id="oU0-6b-njw">
+                                    <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="center" text="Time" minimumScaleFactor="0.50000000000000011" id="GxJ-j7-klN">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <map height="100" alignment="left" id="yRi-T0-oJY"/>
+                    </items>
+                    <connections>
+                        <outlet property="dateLabel" destination="GxJ-j7-klN" id="aFf-Ru-bff"/>
+                        <outlet property="locationLabel" destination="oU0-6b-njw" id="3x0-GV-Per"/>
+                        <outlet property="mapView" destination="yRi-T0-oJY" id="kh0-m7-JBk"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
