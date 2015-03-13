@@ -65,6 +65,7 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.toolbarHidden = false
+        self.tabBarController?.tabBar.hidden = true
     }
     
     // MARK: - Helpers

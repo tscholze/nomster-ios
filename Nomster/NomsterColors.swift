@@ -17,4 +17,13 @@ class NomsterColors {
             alpha: 1.0
         )
     }
+    
+    class func blue() -> UIColor {
+        return UIColor (
+            red: 0x3A / 255,
+            green: 0x67 / 255,
+            blue: 0xAB / 255,
+            alpha: 1.0
+        )
+    }
 }

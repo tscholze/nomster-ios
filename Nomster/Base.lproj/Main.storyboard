@@ -11,7 +11,7 @@
             <objects>
                 <tableViewController title="Create suggestion" id="6xh-3v-3rc" customClass="CreateSuggestionViewController" customModule="Nomster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="hae-vr-n9Z">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -229,7 +229,6 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="ps7-SQ-lfy" id="oPy-fG-F9N"/>
                         <outlet property="mapView" destination="04i-QE-HsM" id="UET-jn-f7T"/>
@@ -239,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F06-Wd-kAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2311" y="-320"/>
+            <point key="canvasLocation" x="3123" y="-320"/>
         </scene>
         <!--First-->
         <scene sceneID="Mzf-Dj-DSv">
@@ -268,14 +267,69 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3w-UC-K3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1562" y="-320"/>
+        </scene>
+        <!--Dice View Controller-->
+        <scene sceneID="4WU-Fz-gcJ">
+            <objects>
+                <viewController id="eJa-cL-j2T" customClass="DiceViewController" customModule="Nomster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O3Z-L4-qRI"/>
+                        <viewControllerLayoutGuide type="bottom" id="TVo-9j-K7U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xCM-s7-4uD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="492"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to eat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ5-Uv-XSA">
+                                <rect key="frame" x="10" y="147" width="568" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeM-Mb-o6G">
+                                <rect key="frame" x="140" y="190" width="320" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eJa-cL-j2T" id="0TH-Mz-uiP"/>
+                                    <outlet property="delegate" destination="eJa-cL-j2T" id="MPs-K6-fUj"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the count of items, than shake" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqn-ut-bxL">
+                                <rect key="frame" x="180" y="179" width="240" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dqn-ut-bxL" secondAttribute="centerX" id="36T-HN-eqC"/>
+                            <constraint firstItem="ZJ5-Uv-XSA" firstAttribute="leading" secondItem="xCM-s7-4uD" secondAttribute="leadingMargin" constant="-6" id="7gT-KE-eKs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZJ5-Uv-XSA" secondAttribute="trailing" constant="6" id="Gmt-2Q-gcO"/>
+                            <constraint firstItem="UeM-Mb-o6G" firstAttribute="top" secondItem="ZJ5-Uv-XSA" secondAttribute="bottom" constant="8" symbolic="YES" id="YfE-KQ-pce"/>
+                            <constraint firstItem="dqn-ut-bxL" firstAttribute="top" secondItem="ZJ5-Uv-XSA" secondAttribute="bottom" constant="-3" id="fkv-YM-G2C"/>
+                            <constraint firstAttribute="centerX" secondItem="dqn-ut-bxL" secondAttribute="centerX" id="hPz-3s-tHp"/>
+                            <constraint firstItem="TVo-9j-K7U" firstAttribute="top" secondItem="UeM-Mb-o6G" secondAttribute="bottom" constant="140" id="iiL-Gp-Sdk"/>
+                            <constraint firstItem="UeM-Mb-o6G" firstAttribute="top" secondItem="dqn-ut-bxL" secondAttribute="bottom" constant="-6" id="mdK-NY-HiT"/>
+                            <constraint firstItem="UeM-Mb-o6G" firstAttribute="centerX" secondItem="xCM-s7-4uD" secondAttribute="centerX" id="otS-gE-Qod"/>
+                            <constraint firstItem="dqn-ut-bxL" firstAttribute="top" secondItem="O3Z-L4-qRI" secondAttribute="bottom" constant="179" id="vXa-01-AzN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="UeM-Mb-o6G" id="cIJ-BB-hac"/>
+                        <segue destination="Nnk-go-A9k" kind="show" identifier="backToList" id="vLG-Yl-BZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAk-5Y-nul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2372" y="-1121"/>
         </scene>
         <!--Nomster-->
         <scene sceneID="fr2-lH-HYl">
             <objects>
                 <tableViewController id="Nnk-go-A9k" customClass="ListViewcontroller" customModule="Nomster" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="xiD-G6-hkP">
-                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -344,6 +398,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Nomster" id="Qeb-81-igW">
+                        <barButtonItem key="leftBarButtonItem" image="dice.png" id="KuV-l5-GUn" userLabel="Dice">
+                            <connections>
+                                <segue destination="eJa-cL-j2T" kind="show" id="U1O-I2-ugG"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="b8i-dh-ga1">
                             <connections>
                                 <segue destination="6xh-3v-3rc" kind="show" id="fmr-oT-OcV"/>
@@ -354,14 +413,15 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IrC-bv-bCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="-320"/>
+            <point key="canvasLocation" x="2338" y="-320"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="dice.png" width="24" height="24"/>
+        <image name="first" width="891" height="1151"/>
         <image name="nomster-logo-large.png" width="891" height="1151"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="utQ-Yx-W6w"/>
+        <segue reference="vLG-Yl-BZY"/>
     </inferredMetricsTieBreakers>
 </document>

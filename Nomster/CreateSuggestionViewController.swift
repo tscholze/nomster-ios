@@ -34,6 +34,7 @@ class CreateSuggestionViewController : UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.toolbarHidden = false
+        self.tabBarController?.tabBar.hidden = true
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

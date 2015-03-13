@@ -28,6 +28,7 @@ class ListViewcontroller: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.toolbarHidden = true
+        self.tabBarController?.tabBar.hidden = false
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
