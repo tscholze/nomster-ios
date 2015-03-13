@@ -16,8 +16,8 @@ The very first screenshots of the app:
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-tweet.png" alt="Tweet feature" width="250" />
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-reload.png" alt="Swipe to reload" width="250" />
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-swipeable-cell.png" alt="Swipeable cell" width="250" />
-<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-v0-dice-list.png" alt="Shake to decide feature" width="250" />
-<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-v0-dice-result.png" alt="Shake to decide result" width="250" />
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-dice-list.png" alt="Shake to decide feature" width="250" />
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-dice-result.png" alt="Shake to decide result" width="250" />
 
 
 
