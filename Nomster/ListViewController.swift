@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ListViewcontroller: UIViewController {
+class ListViewcontroller: UITableViewController {
     
-    @IBOutlet weak var tableView: UITableView!
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Setup table view
+        refreshControl = UIRefreshControl()
+        refreshControl!.attributedTitle = NSAttributedString(string: "Pull to update")
+        refreshControl!.addTarget(self, action: "updateListViewDataSource:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,9 +33,17 @@ class ListViewcontroller: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "showSuggestion")  {
             let vc = segue.destinationViewController as! DetailViewController
-            let index = self.tableView.indexPathForSelectedRow()
+            let index = tableView.indexPathForSelectedRow()
             vc.suggestion = appDelegate.suggestions.objectAtIndex(index!.row) as! Suggestion
         }
+    }
+    
+    // MARK: - Helper
+    
+    func updateListViewDataSource(sender:AnyObject) -> Void {
+        appDelegate.setSuggestionsByRemoteDataSource()
+        tableView.reloadData()
+        refreshControl?.endRefreshing()
     }
 }
 
@@ -43,11 +55,11 @@ extension ListViewcontroller: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension ListViewcontroller: UITableViewDataSource {
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return appDelegate.suggestions.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! SuggestionTableViewCell
         let currentSuggestion: Suggestion = appDelegate.suggestions.objectAtIndex(indexPath.row) as! Suggestion
         

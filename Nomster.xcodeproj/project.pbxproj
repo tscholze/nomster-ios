@@ -10,7 +10,6 @@
 		F629D9081AAC7FBF00A60981 /* katz.png in Resources */ = {isa = PBXBuildFile; fileRef = F629D9071AAC7FBF00A60981 /* katz.png */; };
 		F65269C11A9D11C600978936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269C01A9D11C600978936 /* AppDelegate.swift */; };
 		F65269C51A9D11C600978936 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269C41A9D11C600978936 /* DetailViewController.swift */; };
-		F65269C81A9D11C600978936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65269C61A9D11C600978936 /* Main.storyboard */; };
 		F65269CA1A9D11C600978936 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65269C91A9D11C600978936 /* Images.xcassets */; };
 		F65269CD1A9D11C600978936 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F65269CB1A9D11C600978936 /* LaunchScreen.xib */; };
 		F65269D91A9D11C600978936 /* NomsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65269D81A9D11C600978936 /* NomsterTests.swift */; };
@@ -24,6 +23,7 @@
 		F6C4F4F11AA72B20005AB636 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C4F4F01AA72B20005AB636 /* Social.framework */; };
 		F6C4F4F31AA9A487005AB636 /* CreateSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F4F21AA9A487005AB636 /* CreateSuggestionViewController.swift */; };
 		F6D7DD231AAC78C000CBC8F6 /* NomsterColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7DD221AAC78C000CBC8F6 /* NomsterColors.swift */; };
+		F6E7C7D91AB3430600688F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E7C7D71AB3430500688F47 /* Main.storyboard */; };
 		F6EDE1061AA203A300F49B46 /* nomster-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */; };
 		F6EDE1081AA219B400F49B46 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDE1071AA219B400F49B46 /* MapKit.framework */; };
 		F6F7DD9B1AAC7D9300143249 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7DD9A1AAC7D9300143249 /* InterfaceController.swift */; };
@@ -82,7 +82,6 @@
 		F65269BF1A9D11C500978936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65269C01A9D11C600978936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F65269C41A9D11C600978936 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		F65269C71A9D11C600978936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F65269C91A9D11C600978936 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F65269CC1A9D11C600978936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F65269D21A9D11C600978936 /* NomsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NomsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +97,7 @@
 		F6C4F4F01AA72B20005AB636 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F6C4F4F21AA9A487005AB636 /* CreateSuggestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSuggestionViewController.swift; sourceTree = "<group>"; };
 		F6D7DD221AAC78C000CBC8F6 /* NomsterColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsterColors.swift; sourceTree = "<group>"; };
+		F6E7C7D81AB3430600688F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6EDE1051AA203A300F49B46 /* nomster-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nomster-logo-large.png"; sourceTree = "<group>"; };
 		F6EDE1071AA219B400F49B46 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F6F7DD951AAC7D9300143249 /* Nomster WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Nomster WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,7 +256,7 @@
 		F6AD52C01AA318C900B73214 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F65269C61A9D11C600978936 /* Main.storyboard */,
+				F6E7C7D71AB3430500688F47 /* Main.storyboard */,
 				F65269CB1A9D11C600978936 /* LaunchScreen.xib */,
 			);
 			name = UI;
@@ -444,7 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F65269C81A9D11C600978936 /* Main.storyboard in Resources */,
+				F6E7C7D91AB3430600688F47 /* Main.storyboard in Resources */,
 				F65269CD1A9D11C600978936 /* LaunchScreen.xib in Resources */,
 				F6EDE1061AA203A300F49B46 /* nomster-logo-large.png in Resources */,
 				F65269CA1A9D11C600978936 /* Images.xcassets in Resources */,
@@ -539,20 +539,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F65269C61A9D11C600978936 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F65269C71A9D11C600978936 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F65269CB1A9D11C600978936 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F65269CC1A9D11C600978936 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F6E7C7D71AB3430500688F47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E7C7D81AB3430600688F47 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		F6F7DDAB1AAC7D9300143249 /* Interface.storyboard */ = {
