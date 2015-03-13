@@ -11,19 +11,16 @@ How it looks
 The very first screenshots of the app:
 
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-list.png" alt="List" width="250">
-
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-detail.png" alt="Detail" width="250">
-
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-notification.png" alt="Notifications" width="250">
-
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-tweet.png" alt="Tweet feature" width="250">
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-reload.png" alt="Swipe to reload" width="250">
+
 
 **Apple Watch** (only dummy data)
 
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-main.png" alt="Watch Main UI" width="250">
-
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-glance.png" alt="Watch Glance" width="250">
-
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-watch-notification.png" alt="Watch Notification" width="250">
 
 What's Nomster?
