@@ -49,7 +49,32 @@ class ListViewcontroller: UITableViewController {
 
 // MARK: - UITableViewDelegate
 extension ListViewcontroller: UITableViewDelegate {
-    // nothing to override
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle,
+        forRowAtIndexPath indexPath: NSIndexPath) {
+            // Required for the following methods
+    }
+    
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]?  {
+        let selectedSuggestion = appDelegate.suggestions.objectAtIndex(indexPath.row) as! Suggestion
+        let titleShareButton = selectedSuggestion.isSubscribed ? "Unsubscribe" : "Subscribe"
+        
+        var subscribeAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: titleShareButton , handler: {
+            (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+            
+            selectedSuggestion.isSubscribed = !selectedSuggestion.isSubscribed
+            self.tableView.editing = false
+        })
+        subscribeAction.backgroundColor = UIColor.grayColor()
+
+        var deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete" , handler: {
+            (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+            self.appDelegate.suggestions.removeObject(selectedSuggestion)
+            self.tableView.reloadData()
+            self.tableView.editing = false
+        })
+
+        return [subscribeAction,deleteAction]
+    }
 }
 
 // MARK: - UITableViewDataSource
