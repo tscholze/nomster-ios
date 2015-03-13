@@ -61,8 +61,9 @@ extension ListViewcontroller: UITableViewDelegate {
         
         var subscribeAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: titleShareButton , handler: {
             (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
-            
             selectedSuggestion.isSubscribed = !selectedSuggestion.isSubscribed
+            
+            // TODO: send update to the server
             self.tableView.editing = false
         })
         subscribeAction.backgroundColor = UIColor.grayColor()
@@ -71,6 +72,8 @@ extension ListViewcontroller: UITableViewDelegate {
             (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
             self.appDelegate.suggestions.removeObject(selectedSuggestion)
             self.tableView.reloadData()
+            
+            // TODO: send update to the server
             self.tableView.editing = false
         })
 

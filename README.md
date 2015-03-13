@@ -16,6 +16,8 @@ The very first screenshots of the app:
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-tweet.png" alt="Tweet feature" width="250" />
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-reload.png" alt="Swipe to reload" width="250" />
 <img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-swipeable-cell.png" alt="Swipeable cell" width="250" />
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-v0-dice-list.png" alt="Shake to decide feature" width="250" />
+<img src="https://raw.githubusercontent.com/tscholze/nomster-ios/master/docs/v0-v0-dice-result.png" alt="Shake to decide result" width="250" />
 
 
 
@@ -34,3 +36,8 @@ Nomster is a simple approach to simplify the "what shall we eat at lunch time?" 
 Requirements
 ==
 * Xcode 6 beta -- Version 6.3 (6D532l)
+
+Thanks to
+=
+* [limecarl](https://openclipart.org/detail/183600/Hamster%21) for the Nomster icon
+* [materialdesignicons.com](http://materialdesignicons.com) for the dice icon
