@@ -26,10 +26,6 @@ class DiceViewController: UIViewController {
         self.navigationController?.toolbarHidden = true
     }
     
-    override func canBecomeFirstResponder() -> Bool {
-        return true
-    }
-    
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
         if motion == .MotionShake {
             
