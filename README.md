@@ -36,6 +36,8 @@ Nomster is a simple approach to simplify the "what shall we eat at lunch time?" 
 Requirements
 ==
 * Xcode 6 beta -- Version 6.3 (6D532l)
+* iOS 8.3
+* Swift 1.2
 
 Thanks to
 =
