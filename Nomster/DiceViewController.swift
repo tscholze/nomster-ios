@@ -46,12 +46,14 @@ class DiceViewController: UIViewController {
     }
 }
 
+// MARK: - UIPickerViewDelegate
 extension DiceViewController: UIPickerViewDelegate {
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return (pickerData[row] as NSNumber).stringValue
     }
 }
 
+// MARK: - UIPickerViewDataSource
 extension DiceViewController: UIPickerViewDataSource {
     // returns the number of 'columns' to display.
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
